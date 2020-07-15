@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Llama</string>
+    <string name="welcome_to_llama">Welcome to Llama</string>
+    <string name="mainlogo" translatable="false">MainLogo</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="need_to_register">Need to Register?</string>
+    <string name="register_logo" translatable="false">TODO</string>
+    <string name="email">Email</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="name">Name</string>
+    <string name="country">Country</string>
+    <string name="gender_male_female">Gender(Male/Female)</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="register">REGISTER</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="would_you_like_to_call_someone">Would you like to call someone?</string>
+    <string name="homepage_icon" translatable="false">Homepage Icon</string>
+    <string name="logout">LOGOUT</string>
+    <string name="current_date">current_date</string>
+    <string name="please_click_me">Please click me?</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="call_icon" translatable="false">call_icon</string>
+    <string name="would_you_want_to_listen_to_music" translatable="false">Would you want to listen to music?</string>
+    <string name="play">Play</string>
+    <string name="not_play">Not Play</string>
+    <string name="volume_control">Volume Control</string>
+    <string name="do_you_want_to_listen_to_music">Do you want to listen to music?</string>
+    <string name="progress_control">Progress Control</string>
+    <string name="user_name">Username</string>
+</resources>

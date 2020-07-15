@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="880dp"
+        android:background="@drawable/background4"
+        tools:context=".RegistrationActivity">
+
+        <ImageView
+            android:id="@+id/register_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="103dp"
+            android:layout_marginEnd="125dp"
+            android:contentDescription="@string/register_logo"
+            app:srcCompat="@drawable/login1" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="248dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="#FAFAFA"
+            android:ems="10"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="248dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:background="#FAFAFA"
+            android:ems="10"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="248dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:background="#FAFAFA"
+            android:ems="10"
+            android:hint="@string/date_of_birth"
+            android:importantForAutofill="no"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="248dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/dob"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:background="#FAFAFA"
+            android:ems="10"
+            android:hint="@string/country"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="248dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/register_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:background="#FAFAFA"
+            android:ems="10"
+            android:hint="@string/user_name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender_sign"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/male"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/female"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="176dp"
+            android:layout_height="58dp"
+            android:layout_below="@+id/gender"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="129dp"
+            android:layout_marginTop="11dp"
+            android:text="@string/register"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/gender_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/country"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/gender_male_female"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/already_registered"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</ScrollView>

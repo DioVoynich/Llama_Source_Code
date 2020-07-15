@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:background="@drawable/background3"
+        android:orientation="vertical"
+        tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/llamaLogo"
+            android:layout_width="212dp"
+            android:layout_height="205dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="326dp"
+            android:layout_marginTop="29dp"
+            android:contentDescription="@string/mainlogo"
+            android:src="@drawable/lama" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llamaLogo"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="301dp"
+            android:layout_marginTop="-28dp"
+            android:fontFamily="cursive"
+            android:text="@string/welcome_to_llama"
+            android:textColor="#17246C"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="34dp"
+            android:background="#F8F6F6"
+            android:drawableStart="@drawable/user_icon"
+            android:ems="10"
+            android:hint="@string/username"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_username"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="301dp"
+            android:layout_marginTop="11dp"
+            android:background="#F8F6F6"
+            android:drawableStart="@drawable/password_icon"
+            android:ems="10"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="193dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/login_password"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="339dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_rectangle"
+            android:text="@string/login"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/goToRegisterPage"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_button"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="367dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/need_to_register"
+            android:textColor="#FAFAFA"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</ScrollView>

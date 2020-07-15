@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="880dp"
+        android:background="@drawable/snow"
+        tools:context=".HomeActivity">
+
+
+        <ImageButton
+            android:id="@+id/mainIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="88dp"
+            android:backgroundTint="#FFFAE3"
+            android:contentDescription="@string/homepage_icon"
+            app:srcCompat="@drawable/llama3" />
+
+        <TextView
+            android:id="@+id/clickSign"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainIcon"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="-1dp"
+            android:fontFamily="cursive"
+            android:text="@string/please_click_me"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainIcon"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="cursive"
+            android:text="@string/would_you_like_to_call_someone"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="33sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enter_phoneNumber"
+            android:layout_width="207dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/Welcome"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="40dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/enter_phone_number"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/call_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/Welcome"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="86dp"
+            android:background="@drawable/button_circle"
+            android:contentDescription="@string/call_icon"
+            app:srcCompat="@drawable/call_icon" />
+
+        <TextView
+            android:id="@+id/music"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/call_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:fontFamily="cursive"
+            android:text="@string/do_you_want_to_listen_to_music"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/music"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="103dp"
+            android:fontFamily="cursive"
+            android:text="@string/progress_control"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/progressBar"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:background="#FFFFFF" />
+
+        <SeekBar
+            android:id="@+id/volumeBar"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/volume"
+            android:layout_alignParentEnd="true"
+            android:background="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp" />
+
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="115dp"
+            android:fontFamily="cursive"
+            android:text="@string/volume_control"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/music"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/button_rectangle"
+            android:text="@string/play"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/button_rectangle"
+            android:text="@string/not_play"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="173dp"
+            android:layout_height="63dp"
+            android:layout_below="@+id/stop"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="129dp"
+            android:background="@drawable/button_rectangle"
+            android:text="@string/logout"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/current_date"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="118dp"
+            android:layout_marginEnd="31dp"
+            android:layout_toEndOf="@+id/mainIcon"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textColor="#FA1302"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>

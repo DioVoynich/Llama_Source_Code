@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="880dp"
+        android:background="@drawable/background3"
+        android:orientation="vertical"
+        tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/llamaLogo"
+            android:layout_width="356dp"
+            android:layout_height="436dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="105dp"
+            android:layout_marginEnd="38dp"
+            android:contentDescription="@string/mainlogo"
+            android:src="@drawable/lama" />
+
+        <TextView
+            android:id="@+id/goToRegisterPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/need_to_register"
+            android:textColor="#FAFAFA"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="193dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/login_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/button_rectangle"
+            android:text="@string/login"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="288dp"
+            android:layout_height="34dp"
+            android:layout_below="@+id/login_username"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="22dp"
+            android:background="#F8F6F6"
+            android:drawableStart="@drawable/password_icon"
+            android:ems="10"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="288dp"
+            android:layout_height="34dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="72dp"
+            android:background="#F8F6F6"
+            android:drawableStart="@drawable/user_icon"
+            android:ems="10"
+            android:hint="@string/username"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llamaLogo"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="-69dp"
+            android:fontFamily="cursive"
+            android:text="@string/welcome_to_llama"
+            android:textColor="#17246C"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>

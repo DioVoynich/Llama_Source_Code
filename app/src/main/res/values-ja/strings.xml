@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Llama</string>
+    <string name="do_you_want_to_listen_to_music">音楽をお聴きしますか？</string>
+    <string name="welcome_to_llama">ようこそLlamaへ</string>
+    <string name="username">ユーザーネーム</string>
+    <string name="password">パスワード</string>
+    <string name="login">ログイン</string>
+    <string name="need_to_register">登録をしますか？</string>
+    <string name="date_of_birth">生年月日</string>
+    <string name="name">お名前</string>
+    <string name="country">国/地域</string>
+    <string name="gender_male_female">性別(男性/女性)</string>
+    <string name="male">男性</string>
+    <string name="female">女性</string>
+    <string name="email">Eメール</string>
+    <string name="already_registered">既に登録済みですか？</string>
+    <string name="would_you_like_to_call_someone">電話をおかけしますか？</string>
+    <string name="register">登録</string>
+    <string name="logout">ログアウト</string>
+    <string name="please_click_me">クリックをしてください？</string>
+    <string name="enter_phone_number">電話番号を入力してください</string>
+    <string name="play">聴く</string>
+    <string name="not_play">やめる</string>
+    <string name="volume_control">音量調整</string>
+    <string name="progress_control">進行状況</string>
+</resources>
